@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		C4691F01265C16A4000B391D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4691F00265C16A4000B391D /* ContentView.swift */; };
 		C4691F03265C16A5000B391D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4691F02265C16A5000B391D /* Assets.xcassets */; };
 		C4691F06265C16A5000B391D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4691F05265C16A5000B391D /* Preview Assets.xcassets */; };
+		C4691F0F265C16E6000B391D /* SSToastMessage in Frameworks */ = {isa = PBXBuildFile; productRef = C4691F0E265C16E6000B391D /* SSToastMessage */; };
+		C4691F11265C1729000B391D /* MyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4691F10265C1729000B391D /* MyButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,7 @@
 		C4691F02265C16A5000B391D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4691F05265C16A5000B391D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4691F07265C16A5000B391D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4691F10265C1729000B391D /* MyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4691F0F265C16E6000B391D /* SSToastMessage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 				C4691F02265C16A5000B391D /* Assets.xcassets */,
 				C4691F07265C16A5000B391D /* Info.plist */,
 				C4691F04265C16A5000B391D /* Preview Content */,
+				C4691F10265C1729000B391D /* MyButtonView.swift */,
 			);
 			path = PopUpAlerts;
 			sourceTree = "<group>";
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = PopUpAlerts;
+			packageProductDependencies = (
+				C4691F0E265C16E6000B391D /* SSToastMessage */,
+			);
 			productName = PopUpAlerts;
 			productReference = C4691EFB265C16A4000B391D /* PopUpAlerts.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,9 @@
 				Base,
 			);
 			mainGroup = C4691EF2265C16A4000B391D;
+			packageReferences = (
+				C4691F0D265C16E6000B391D /* XCRemoteSwiftPackageReference "SSToastMessage" */,
+			);
 			productRefGroup = C4691EFC265C16A4000B391D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4691F01265C16A4000B391D /* ContentView.swift in Sources */,
+				C4691F11265C1729000B391D /* MyButtonView.swift in Sources */,
 				C4691EFF265C16A4000B391D /* PopUpAlertsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +338,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C4691F0D265C16E6000B391D /* XCRemoteSwiftPackageReference "SSToastMessage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimformSolutionsPvtLtd/SSToastMessage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C4691F0E265C16E6000B391D /* SSToastMessage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4691F0D265C16E6000B391D /* XCRemoteSwiftPackageReference "SSToastMessage" */;
+			productName = SSToastMessage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C4691EF3265C16A4000B391D /* Project object */;
 }
